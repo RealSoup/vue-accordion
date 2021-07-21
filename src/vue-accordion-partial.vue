@@ -1,9 +1,9 @@
 <template>
 	<li :style="liStyles">
-		<a :href="item.url" :style="aStyles">
+		<router-link :to="{ path: item.url}" :style="aStyles">
 			<h2 v-text="item.title" :style="h2Styles"></h2>
 			<p v-text="item.text" :style="pStyles"></p>
-		</a>
+		</router-link>
     </li>
 </template>
 <script>
